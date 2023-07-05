@@ -15,7 +15,7 @@ const CustomInput = ({ placeholder, label, value, setValue, ...otherProps }: ICu
         </label>
       )}
       <input
-        className="rounded border border-[#E5E5E5] bg-white p-4 focus:outline-0 focus:border-black focus:border-2 "
+        className="rounded border border-[#E5E5E5] bg-white p-4 focus:outline-0 focus:border-black focus:border-2"
         id="password"
         name="password"
         placeholder={placeholder}
