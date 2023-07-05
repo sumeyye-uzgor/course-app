@@ -1,24 +1,22 @@
 "use client"
 import React, { ReactNode, useState } from "react"
 import Image from "next/image"
-import Sidebar from "./Sidebar"
+import Sidebar from "./Sidebar/Sidebar"
 
 const DashboardLayout = ({ children }: { children: ReactNode }) => {
   const [showSidebar, setShowSidebar] = useState(true)
 
   return (
-    <>
-      <div className="flex">
-        <div className="w-64 py-8 px-4">
-          <Sidebar />
-        </div>
-
-        <button className="p-2 rounded-r-md focus:outline-none">
-          <Image src="/burger-menu.svg" width={100} height={20} alt="burger menu" />
-        </button>
+    <div>
+      <div className="block sm:hidden">
+        <Sidebar />
+        {children}
       </div>
-      {children}
-    </>
+      <div className="hidden sm:inline-grid gap-2 pl-[17rem]">
+        <Sidebar />
+        <div className="block">{children}</div>
+      </div>
+    </div>
   )
 }
 
