@@ -15,8 +15,10 @@
     "project": "./tsconfig.json",
     "ecmaFeatures": {
       "jsx": true
-    }
+    },
+    "extraFileExtensions": [".css"]
   },
+  "ignorePatterns": ["src/app/globals.css"],
   "settings": {
     "react": {
       "version": "detect"
