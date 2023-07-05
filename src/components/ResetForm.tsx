@@ -18,7 +18,7 @@ const SignInForm = () => {
         <CustomButton type="submit" text="Reset Password" />
         <p className=" text-[#6c6c6c] text-sm">
           You already have a password?{" "}
-          <Link href="/sign-in" aria-disabled="true" className="text-[#FEAF00] underline">
+          <Link href="/auth/login" aria-disabled="true" className="text-[#FEAF00] underline">
             Login
           </Link>
         </p>
